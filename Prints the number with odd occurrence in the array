@@ -1,0 +1,48 @@
+/*Program which takes an array input. 
+In the input array, all the numbers will occur even number of times, except one number, which occurs odd number of times. 
+Print that number which occurs odd number of times.*/
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int oddOccurrence(int arr[], int arr_size)
+{
+	for (int i = 0; i < arr_size; i++) 
+	{
+		
+		int ran = 0;
+		
+		for (int j = 0; j < arr_size; j++)
+		{
+			if (arr[i] == arr[j])
+				ran++;
+		}
+		if (ran % 2 != 0)
+			return arr[i];
+	}
+	return 0;
+}
+
+
+int main()
+	{  
+	   int A[25];
+	   int num,n;
+	   
+	   cout << "Enter the number of elements in the array\n";
+	   cin >> num;
+	   cout << "Enter the elements:\n";//one number having occurence odd number of times rest having even occurence
+	   for ( n = 0; n < num ; n++)
+	   {
+	   	cin >> A[n];
+	   }
+		
+	if (oddOccurrence(A,num) == 0)
+	cout << "None of the numbers have odd occurrence";
+	else
+	cout << "The number with odd occurrence is=>\t" << oddOccurrence(A,num);
+
+		return 0;
+	}
