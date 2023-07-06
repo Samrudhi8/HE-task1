@@ -31,18 +31,18 @@ int main()
 	   int A[25];
 	   int num,n;
 	   
-	   cout << "Enter the number of elements in the array\n";
+	   
 	   cin >> num;
-	   cout << "Enter the elements:\n";//one number having occurence odd number of times rest having even occurence
+	  
 	   for ( n = 0; n < num ; n++)
 	   {
 	   	cin >> A[n];
 	   }
 		
 	if (oddOccurrence(A,num) == 0)
-	cout << "None of the numbers have odd occurrence";
+	cout << "None";
 	else
-	cout << "The number with odd occurrence is=>\t" << oddOccurrence(A,num);
+	cout << oddOccurrence(A,num);
 
 		return 0;
 	}
