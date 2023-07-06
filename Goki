@@ -8,14 +8,14 @@ int main()
 	
 	
 	//Statements
-	cout << "Please enter the number of people Goki can be friend with:\n";
+	
 	cin >> N;
-	cout << "Enter the number of skills that Goki wants in his friend:\n";
+	
 	cin >> X;
 	
 	int A[N];
 	
-  cout << "Enter the minimum number of skills of the ith person\n";
+  
 	for(int i=0; i < N; i++)
 	{
 		cin >> A[i];
